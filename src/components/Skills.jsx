@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaFigma } from 'react-icon
 
 const SkillCard = ({ Icon, title, description }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center">
+    <div className=" bg-white border-l-4 border-gray-900 rounded-lg shadow-md p-6 flex flex-col items-center justify-center">
       <Icon className="text-6xl mb-4" />
       <h3 className="text-2xl font-semibold mb-4">{title}</h3>
       <p className="text-center">{description}</p>

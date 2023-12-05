@@ -1,7 +1,9 @@
 import './App.css';
 import AboutMe from './components/About';
+import Footer from './components/Footer';
 import HeroSection from './components/Hero';
 import SkillsSection from './components/Skills';
+import ContactMe from './components/contact';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
      <HeroSection />
      <AboutMe />
      <SkillsSection />
+     <ContactMe />
+     <Footer />
     </div>
   );
 }
