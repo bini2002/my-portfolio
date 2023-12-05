@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-12 items-center justify-between">
           <div className="w-[600px] flex items-center justify-end lg:pl-8 lg:order-1">
-            <img src="/myimage.jpg" alt="Binita Shrestha" className="h-[500px] rounded-lg" />
+            <img src="/myPhoto.jpg" alt="Binita Shrestha" className="h-[500px] rounded-lg " />
           </div>
           <div className="w-2/3 flex flex-col gap-y-4 lg:pr-8 lg:order-2">
           <h2 className="text-3xl lg:text-5xl font-bold mb-8 ">About Me</h2>
