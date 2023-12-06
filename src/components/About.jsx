@@ -1,8 +1,27 @@
 import React from 'react';
-import { FaCoffee, FaBook, FaHiking, FaMusic, FaBookReader, FaGamepad } from 'react-icons/fa';
+import { FaCoffee, FaBook, FaHiking, FaMusic, FaBookReader, FaGamepad, FaDownload } from 'react-icons/fa';
+
 
 
 const AboutMe = () => {
+  const handleDownload = () => {
+    const fileURL = '/BinitaShresthaResume.pdf'; // Replace this with the path to your PDF file
+
+    // Create an anchor element
+    const link = document.createElement('a');
+    link.href = fileURL;
+    link.setAttribute('download', 'BinitaShresthaResume.pdf');
+    
+    // Append the anchor to the body
+    document.body.appendChild(link);
+
+    // Trigger the download
+    link.click();
+
+    // Clean up
+    document.body.removeChild(link);
+  };
+  
   return (
     <section id='about' className="min-h-screen bg-green-100 py-16 lg:py-20 px-8 lg:px-16">
       <div className="container mx-auto">
@@ -15,7 +34,7 @@ const AboutMe = () => {
           <div className='flex flex-col gap-y-2'>
             <h3 className="text-xl font-bold text-orange-700">Frontend Developer</h3>
             <p className="text-base lg:text-lg text-justify break-words hyphens-auto">
-            I'm Binita Shrestha, a passionate self-taught frontend developer dedicated to crafting engaging, user-centric web experiences. My commitment to learning and exploring new technologies empowers me to specialize in HTML, CSS, JavaScript, and React.            </p>
+            I'm Binita Shrestha, a passionate self-taught frontend developer dedicated to crafting engaging, user-centric web experiences. My commitment to learning and exploring new technologies empowers me to specialize in HTML, CSS, JavaScript, Reactjs, Nextjs and other frameworks            </p>
             <p className='font-semibold'>Outside of coding, I enjoy:</p>
 
             <div className='grid grid-cols-2 lg:grid-cols-3 mt-4 '>
@@ -59,8 +78,11 @@ const AboutMe = () => {
             
             </div>
             <div className="mt-6">
-              <button className="bg-[#05386B] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">
-                Download CV
+              <button
+              onClick={handleDownload}
+              className="bg-[#05386B] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg flex gap-x-2 items-center w-40  whitespace-nowrap">
+                <FaDownload />
+            <span>Download CV</span>
               </button>
             </div>
           </div>

@@ -14,14 +14,14 @@ const ContactMe = () => {
                         </p>
                         <img src='/contact.png' alt='illustration' />
                         <div className="flex justify-center lg:justify-start mt-4 space-x-4">
-                            <button className="bg-[#05386B] hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline flex items-center" type="button">
+                            <a href='tel:+9779804179800' className="bg-[#05386B] hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline flex items-center" type="button">
                                 <FaPhoneAlt className="mr-2" />
                                 Call Me
-                            </button>
-                            <button className="bg-[#5CDB95] hover:bg-green-500 text-gray-800 font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline flex items-center" type="button">
+                            </a>
+                            <a href="mailto:binitastha34@gmail.com" className="bg-[#5CDB95] hover:bg-green-500 text-gray-800 font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline flex items-center" type="button">
                                 <FaEnvelope className="mr-2" />
                                 Email Me
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div className="w-full lg:w-1/2 lg:pr-8">

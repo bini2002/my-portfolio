@@ -25,7 +25,7 @@ const SkillsSection = () => {
           <SkillCard
             Icon={FaCss3Alt}
             title="CSS"
-            description="Styling and layout design"
+            description="Styling and layout design with Tailwind css"
           />
           {/* Add other skills similarly */}
           <SkillCard
