@@ -9,7 +9,7 @@ const HeroSection = () => {
       <Header />
       <section id='home' className="min-h-[90vh] bg-[#05386B] text-white py-16 lg:py-24 px-8 lg:px-16 flex items-center justify-center">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
-          <div className=" lg:mr-10">
+          <div className=" lg:mr-10" >
             <h3 className='lg:text-xl font-bold mb-4'>Hey, I'm</h3>
             <h1 className=" text-4xl lg:text-8xl font-bold mb-4">Binita <span className='block text-[#5CDB95]'>Shrestha</span></h1>
             <p className="text-lg lg:text-xl mb-8">Frontend Developer passionate about crafting web experiences.</p>

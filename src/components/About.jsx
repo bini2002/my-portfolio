@@ -26,8 +26,8 @@ const AboutMe = () => {
     <section id='about' className="min-h-screen bg-green-100 py-16 lg:py-20 px-8 lg:px-16">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-x-12 lg:items-center lg:justify-between">
-          <div className="w-[600px] flex items-center justify-end lg:pl-8 lg:order-1">
-            <img src="/myPhoto.jpg" alt="Binita Shrestha" className="hidden lg:block lg:h-[500px] rounded-lg " />
+          <div className="w-[600px] flex items-center justify-end lg:order-1 border-dotted border-4 border-[#05386B] rounded-full overflow-hidden">
+            <img src="/myPhoto.png" alt="Binita Shrestha" className="hidden lg:block lg:h-[500px]" />
           </div>
           <div className="lg:w-2/3 flex flex-col gap-y-4 lg:pr-8 lg:order-2">
           <h2 className="text-3xl lg:text-5xl font-bold mb-8 ">About Me</h2>
